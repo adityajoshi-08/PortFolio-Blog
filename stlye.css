@@ -1,0 +1,126 @@
+/* Default CSS */
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+
+/* NavBar Styling */
+
+
+
+/* This is used to 
+- Flexbox so that we make the display vertical on phone
+- Maximise the width to the same as the NavBar div
+- Distribute the items to the end 
+*/
+.small-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+/* This is used to
+- Remove the underline of a link
+- Make the font-color black 
+*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* This snippet is used to make the image and name in one line and then to vertically center them */
+.logo a{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* This is used to - 
+- Move the name a little far from the IMAGE as it was sticking to it
+- Make the image smaller
+- Make the image circular 
+- Vertically align with the text
+*/
+.logo img{
+    margin-right: 15px;
+    width: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+
+/* 
+This makes the name a little bigger and vertically aligns with the image */
+.logo h1{
+    font-size: 35px;
+    vertical-align: middle;
+}
+
+/* 
+This is used to
+- Align with the logo div
+- Pad a little for alignment 
+*/
+.nav-right{
+    display: inline;
+    padding: 10px;
+}
+
+
+
+/* 
+This is used to
+- Remove the unordered list styling dot
+- Make all the points aligned
+- Make the text a bit bold
+- Space the things a little
+- Increast the font size 
+*/
+.nav-right ul li{
+    list-style-type: none;
+    display: inline;
+    font-weight: 400;
+    margin-right: 5px;
+    font-size: 22px;
+}
+
+
+/* Introduction */
+
+
+/* This is used to make the two parts inline and will help in responsiveness */
+.introduction{
+    display: flex;
+}
+
+
+/* This is used to
+- Center the text
+- Shift the text a little left
+- Increase the font-size 
+*/
+.introduction h1{
+    margin: auto;
+    margin-left: 0;
+    font-size: 40px;
+}
+
+
+/* This is used to
+- Make the image a bit small
+- Make the image circular
+ */
+.introduction img{
+    width: 50%;
+    border-radius: 50%;
+}
+
