@@ -124,3 +124,166 @@ This is used to
     border-radius: 50%;
 }
 
+
+
+/* Skills section */
+
+/* This is used to center align the heading in center */
+.heading{
+    text-align: center;
+}
+
+
+/* This is used to
+- Increase the width and height
+- Change the color to reddish
+- Remove the border to make it more clean
+- Change right and left margin to auto to center align it
+- Shift it a little down
+- Make the borders curved
+*/
+hr{
+    width: 80px;
+    height: 6px;
+    background-color: #EB4747;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    border-radius: 25px;
+}
+
+
+/* 
+This is used to
+- Move the images away from the heading
+- Display flex to evenly distribute elements
+*/
+.skills{
+    margin-top:35px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+/* This is used to make the image used in skills smaller */
+.skills a img{
+    width: 60px
+}
+
+
+/* Projects section */
+
+
+/* This is used to
+- Make the display flex that helps in responsiveness
+*/
+.projects{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+/* 
+This is used to
+- Align the heading for text in center of each project card
+- Make the font light
+*/
+.project{
+    text-align: center;
+    font-weight: 200;
+}
+
+
+/* 
+This is used to adjust the image size
+*/
+.projects img{
+    width: 250px;
+    height: 250px;
+}
+
+
+/* Footer */
+
+
+/* 
+This is used to 
+- Change the background color
+- Shift the footer down
+- Make the text center aligned
+- Change the text color
+- Pad up things
+- Make the top ends smooth
+*/
+.footer{
+    margin-top: 25px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 75px 75px 25px 75px;
+    border-radius: 25px 25px 0 0;
+}
+
+
+/* To change the font and make the heading look bigger */
+.footer h1{
+    font-size: 50px;
+}
+
+
+/* Removing extra padding from container here for alignment */
+.footer .container{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* This is used to-
+- Change the text color
+- Reduce the opacty of text
+- Increase the font size
+*/
+.footer a{
+    color: white;
+    opacity: 0.8;
+    font-size: 25px;
+}
+
+
+
+/* Media Query */
+
+@media(max-width:780px){
+    /* Normal CSS for various parts */
+
+    /* NavBar and the logo*/
+    .navbar .small-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo a{
+        display: block;
+        margin: auto;
+    }
+
+    .logo a img{
+        display: block;
+        margin: auto;       
+    }
+
+
+    /* Introduction */
+
+    .introduction{
+        flex-direction: column-reverse;
+        align-items: center;
+            ext-align: center;
+    }
+
+    .introduction img{
+        margin-bottom:15px;
+    }
+}
